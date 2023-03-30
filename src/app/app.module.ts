@@ -8,6 +8,10 @@ import { PageInscriptionComponent } from './pages/page-inscription/page-inscript
 import { PageDashboardComponent } from './pages/page-dashboard/page-dashboard.component';
 import { PageStatistiqueComponent } from './pages/page-statistique/page-statistique.component';
 import { MenuComponent } from './composants/menu/menu.component';
+import { HeaderComponent } from './composants/header/header.component';
+import { PageArticleComponent } from './pages/page-article/page-article.component';
+import { DetailArticleComponent } from './composants/detail-article/detail-article.component';
+import { PaginationComponent } from './composants/pagination/pagination.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,11 @@ import { MenuComponent } from './composants/menu/menu.component';
     PageInscriptionComponent,
     PageDashboardComponent,
     PageStatistiqueComponent,
-    MenuComponent
+    MenuComponent,
+    HeaderComponent,
+    PageArticleComponent,
+    DetailArticleComponent,
+    PaginationComponent
   ],
   imports: [
     BrowserModule,
