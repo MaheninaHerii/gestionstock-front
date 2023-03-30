@@ -11,18 +11,18 @@ const routes: Routes = [
     component: PageLoginComponent
   },
   {
-    path:'inscrire',
+    path:'register',
     component:PageInscriptionComponent
   },
   {
     path:'',
     component:PageDashboardComponent,
-      children:[
-        {
-          path:'statistique',
-          component:PageStatistiqueComponent
-        }
-   ]
+    children:[
+      {
+        path:'statistique',
+        component:PageStatistiqueComponent
+      }
+    ]
   }
 ];
 
