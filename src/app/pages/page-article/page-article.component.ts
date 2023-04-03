@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-page-article',
@@ -8,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 export class PageArticleComponent implements OnInit {
   
   errorMsg = '';
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
     
+  }
+
+  nouvelArticle(): void {
+    this.router.navigate(['nouvelarticle']);
   }
 }
